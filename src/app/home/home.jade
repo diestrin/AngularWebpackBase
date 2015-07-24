@@ -1,0 +1,28 @@
+div(layout="vertical", layout-fill)
+  md-content
+    header
+      md-toolbar(layout="row", layout-align="center center")
+        md-button(href="https://github.com/Swiip/generator-gulp-angular") Webpack Angular
+        section(flex, layout="row", layout-align="left center")
+          md-button.md-raised(href="#") Home
+          md-button.md-raised(href="#") About
+          md-button.md-raised(href="#") Contact
+        md-button.acme-navbar-text Some text
+
+    section.jumbotron
+      h1 'Allo, 'Allo!
+      p.lead
+        img(src="assets/images/yeoman.png", alt="I'm Yeoman")
+        br
+        | Always a pleasure scaffolding your apps.
+      md-button.md-raised.animated.infinite(ng-class="main.classAnimation",
+        ng-click="main.showToastr()") Splendid Toastr
+      p With ♥ thanks to the contributions of Yeoman, Gulp, Angular
+
+    .techs(layout-align="center")
+      md-card
+        .thumbnail
+          img.pull-right(src="assets/images/angular-material.png")
+          .caption
+            h3 Angular Material
+            p Material design framework
